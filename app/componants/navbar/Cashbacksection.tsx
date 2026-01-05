@@ -2,7 +2,11 @@ import Image from "next/image";
 
 export default function TradeandEarn() {
   return (
-    <section className="relative bg-gradient-to-b from-[#050b1e] to-[#020617] py-28 ">
+    <section className="relative bg-linear-to-b from-[#050b1e] to-[#020617] py-28 ">
+      <div
+        className="absolute right-0 top-10 md:w-[400px] w-[300px] h-[300px] 
+              bg-blue-700/60 blur-[120px] rounded-full"
+      ></div>
       <div className="mx-auto max-w-7xl px-6 mt-26 mb-20">
         <h2 className="text-center text-4xl md:text-5xl font-bold text-white mb-20">
           Deposit. Trade. Earn.

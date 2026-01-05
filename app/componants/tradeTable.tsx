@@ -186,7 +186,7 @@ export default function TradeTable() {
   return (
     <div className="bg-transparent py-10">
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl md:text-7xl font-semibold tracking-tight text-white  bg-clip-text">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white  bg-clip-text">
           Trade Global Markets{" "}
           <span className="text-gray-400">at the Lowest Costs!</span>
         </h1>

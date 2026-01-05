@@ -22,23 +22,22 @@ export default function RegulationAndPartners() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-gradient-to-b from-[#06124a] via-[#050b1a] to-[#050b1a] overflow-hidden"
+      className="relative overflow-hidden h-[80dvh] flex"
     >
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="rotating-circle w-[1000px] h-[1000px] rounded-full border border-white/10" />
-        <div className="absolute w-[700px] h-[700px] rounded-full border border-white/5" />
+        <div className="rotating-circle w-250 h-250 rounded-full border-8 border-white/10" />
+        <div className="absolute w-175 h-175 rounded-full border-8 border-white/5" />
+        <div className="absolute h-[80dvh] w-[80dvh] rounded-full blur-[120px] bg-blue-500/40 -bottom-2/3 shadow-2xl" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-40 grid md:grid-cols-2 gap-24 text-white">
+      <div className="relative max-w-7xl mx-auto px-6 py-20 my-auto grid md:grid-cols-2 gap-24 text-white">
         <div
-          className={`transition-all duration-1000 ease-out ${
-            visible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-24"
+          className={`transition-all duration-1000 ease-out text-center w-5/6 ${
+            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
           }`}
         >
           <h2 className="text-5xl font-bold mb-8">We’re Regulated</h2>
-          <p className="text-white/70 text-lg leading-loose max-w-xl">
+          <p className="text-white/70 text-lg md:text-xl leading-loose ">
             Moneta Markets operates in accordance with the financial regulations
             and compliance standards outlined by the SLIBC (Reg. No. 2023-00068)
             and FSCA (Reg. No. 47490).
@@ -46,17 +45,16 @@ export default function RegulationAndPartners() {
         </div>
 
         <div
-          className={`transition-all duration-1000 delay-150 ease-out ${
-            visible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-24"
+          className={`transition-all duration-1000 delay-150 ease-out text-center w-5/6 ${
+            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
           }`}
         >
           <h2 className="text-5xl font-bold mb-8">You’re Protected</h2>
-          <p className="text-white/70 text-lg leading-loose max-w-xl">
-            Client funds are held in a segregated account with an AA-Rated Global
-            Bank and trading accounts have negative balance protection. We are
-            subject to regular audits and have comprehensive indemnity insurance.
+          <p className="text-white/70 text-lg leading-loose md:text-xl">
+            Client funds are held in a segregated account with an AA-Rated
+            Global Bank and trading accounts have negative balance protection.
+            We are subject to regular audits and have comprehensive indemnity
+            insurance.
           </p>
         </div>
       </div>

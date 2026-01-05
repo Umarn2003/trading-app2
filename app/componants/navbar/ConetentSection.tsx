@@ -2,15 +2,18 @@ import Image from "next/image";
 
 export default function HowTrade() {
   return (
-    <main className="min-h-screen bg-linear-to-b from-[#050b1e] to-[#020617] text-white">
+    <main className=" bg-linear-to-b from-[#050b1e] to-[#020617] text-white relative">
+      <div
+        className="absolute -left-40 bottom-0 md:w-[400px] w-[300px] h-[300px] 
+              bg-blue-700/70 blur-[120px] rounded-full"
+      ></div>
       <section className="max-w-7xl mx-auto px-6 py-20">
-
-        <h1 className="text-center text-6xl md:text-7xl font-bold mb-16 mt-46">
-          Learn How to Trade the Market in Both Directions
+        <h1 className="text-center text-4xl md:text-6xl font-bold mb-16">
+          Learn How to <span className="text-blue-500">Trade the Market </span>{" "}
+          in Both Directions
         </h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center w-11/12 mx-auto">
           <div>
             <h3 className="text-xl text-center font-bold mb-4">
               Market price goes higher
@@ -37,7 +40,7 @@ export default function HowTrade() {
               Profit from both up and down market cycles with Moneta Markets!
             </p>
 
-            <button className="mt-14 px-8 py-4 rounded-lg bg-blue-600 hover:bg-blue-700 transition font-bold">
+            <button className="mt-14 px-8 py-4 hover:cursor-pointer rounded-lg bg-blue-600 hover:bg-blue-800 transition font-bold">
               Learn how to trade
             </button>
           </div>
@@ -56,7 +59,6 @@ export default function HowTrade() {
               />
             </div>
           </div>
-
         </div>
       </section>
     </main>

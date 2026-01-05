@@ -6,52 +6,63 @@ import { motion } from "framer-motion";
 export default function GlobalMarkets() {
   const cards = [
     {
-      title: "Trading Sécurisé",
-      description: "Une sécurité avancée protège vos fonds et vos données.",
+      title: "Premium Economic Calendar",
+      description:
+        "Start trading news like the pros with our professional economic calendar.",
       outputs: [
-        "Chiffrement des données de bout en bout",
-        "Protection de compte multi-couches",
-        "Systèmes de garde de fonds sécurisés",
+        "Real-time global economic events",
+        "High-impact news filtering",
+        "Advanced market timing insights",
       ],
     },
     {
-      title: "Exécution Rapide",
+      title: "Technical Views",
       description:
-        "Placez des ordres instantanément avec une exécution à haute vitesse.",
+        "Access live trading setups based on pattern recognition and expert analysis.",
       outputs: [
-        "Traitement à latence ultra-faible",
-        "Confirmations instantanées",
-        "Infrastructure optimisée",
+        "Professional technical analysis",
+        "Pattern recognition setups",
+        "Actionable trade ideas",
       ],
     },
     {
-      title: "Marchés Mondiaux",
+      title: "Alpha EA",
       description:
-        "Accédez au Forex, Crypto, Indices, ETFs en un seul endroit.",
+        "Unlock live trading ideas with three Expert Advisors for MT4 and MT5.",
       outputs: [
-        "Accès multi-actifs",
-        "Connectivité mondiale",
-        "Tableau de bord unifié",
+        "Three powerful automated EAs",
+        "MT4 & MT5 compatibility",
+        "Live algorithmic trade signals",
       ],
     },
     {
-      title: "Informations en Temps Réel",
+      title: "AI Market Buzz",
       description:
-        "Négociez plus intelligemment en utilisant des données de marché en direct et des analyses.",
+        "Gain live market-moving insights across thousands of tradable assets.",
       outputs: [
-        "Graphiques et flux en direct",
-        "Analyses avancées",
-        "Indicateurs personnalisés",
+        "AI-powered sentiment analysis",
+        "Coverage of 35,000+ assets",
+        "Real-time market buzz alerts",
       ],
     },
     {
-      title: "Support 24/7",
+      title: "Forex Signals",
       description:
-        "Obtenez une aide experte à tout moment dont vous avez besoin.",
+        "Access daily forex trading ideas and technical setups in real-time.",
       outputs: [
-        "Assistance toujours disponible",
-        "Chat en direct et tickets",
-        "Spécialistes dédiés",
+        "Daily trading signals",
+        "Technical entry & exit points",
+        "Real-time signal updates",
+      ],
+    },
+    {
+      title: "Cashback Bonus",
+      description:
+        "Get a 50% cashback bonus that converts into real cash as you trade.",
+      outputs: [
+        "50% cashback on trading volume",
+        "Bonus converts to withdrawable cash",
+        "Automatic reward tracking",
       ],
     },
   ];
@@ -59,68 +70,61 @@ export default function GlobalMarkets() {
   const duplicatedCards = [...cards, ...cards];
 
   return (
-    <section className="bg-black text-white py-16 overflow-hidden">
+    <section className="bg-linear-to-b from-[#050b1e] to-[#020617] text-white py-32">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto ">
-          <h2 className="text-2xl md:text-5xl font-semibold bg-linear-to-br from-white/70 via-yellow-500 to-black/50 text-transparent bg-clip-text">
-            Avantages du Trading CFD
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-5xl font-semibold text-white">
+            Improve your Trading with a Range of Exclusive Trading Tools
           </h2>
-          <p className="text-white/60 mt-4 md:text-lg text-sm">
-            Fonctionnalités puissantes conçues pour les traders modernes.
-          </p>
         </div>
 
-        <div className="mt-16 overflow-hidden relative">
+        {/* Grid Layout with Stagger Animation */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
           <div
-            className="pointer-events-none absolute inset-y-0 left-0 w-24 
-    bg-linear-to-r from-black via-black/70 to-transparent z-10"
-          />
+        className="absolute -left-40 bottom-10 md:w-[400px] w-[300px] h-[300px] 
+              bg-blue-700/70 blur-[120px] rounded-full"
+      ></div>
+          {cards.map((card, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+                ease: "easeOut",
+              }}
+              className="
+                rounded-2xl p-8 hover:-translate-y-2 transition duration-300
+                bg-[#141a30]
+                border border-gray-500
+                shadow-lg
+                hover:border-blue-500
+                hover:shadow-blue-500/20
+                cursor-pointer
+              "
+            >
+              <p className="text-sm opacity-90 text-blue-500">
+                {String(index + 1).padStart(2, "0")}
+              </p>
 
-          <div
-            className="pointer-events-none absolute inset-y-0 right-0 w-24 
-    bg-linear-to-l from-black via-black/80 to-transparent z-10"
-          />
+              <h3 className="text-2xl text-white/90 font-semibold mt-3 mb-4">
+                {card.title}
+              </h3>
 
-          <motion.div
-            className="flex gap-10 w-max"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{
-              duration: 25,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          >
-            {duplicatedCards.map((card, index) => (
-              <div
-                key={index}
-                className="
-          min-w-[320px] md:w-120 rounded-2xl p-8
-          bg-linear-to-br from-yellow-400/85 via-black/60 to-yellow-400/85
-          backdrop-blur-lg border border-white/30
-          shadow-lg
-        "
-              >
-                <p className="text-sm opacity-60">
-                  {String((index % cards.length) + 1).padStart(2, "0")}
-                </p>
+              <p className="text-white/50 mb-6">{card.description}</p>
 
-                <h3 className="text-2xl text-yellow-400 font-semibold mt-3 mb-4">
-                  {card.title}
-                </h3>
-
-                <p className="text-white/80 mb-6">{card.description}</p>
-
-                <ul className="space-y-2 text-sm">
-                  {card.outputs.map((item, i) => (
-                    <li key={i} className="flex gap-2">
-                      <span className="text-yellow-500">•</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </motion.div>
+              <ul className="space-y-2 text-sm">
+                {card.outputs.map((item, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-blue-500">•</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

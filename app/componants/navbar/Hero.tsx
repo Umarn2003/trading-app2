@@ -57,7 +57,7 @@ export default function Hero() {
       <section className="relative h-screen w-full overflow-hidden flex justify-center border-b">
         <div className="max-w-7/12 w-full mx-auto my-auto grid lg:grid-cols-2 items-center justify-between">
           <div key={active} className="space-y-6 animate-fadeIn w-full">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight">
               {slides[active].title}
               <br />
               {slides[active].highlight}
