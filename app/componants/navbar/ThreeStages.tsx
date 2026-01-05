@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 export default function ThreeSteps() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -9,7 +9,7 @@ export default function ThreeSteps() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('show');
+          entry.target.classList.add("show");
         }
       },
       { threshold: 0.3 }
@@ -29,7 +29,7 @@ export default function ThreeSteps() {
         className="relative z-10 max-w-7xl mx-auto px-6 text-center steps-wrapper"
       >
         <h1 className="text-6xl md:text-7xl font-bold mb-20">
-          <span className="bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-white to-neutral-400 bg-clip-text text-transparent">
             Start Trading in 3 Simple Steps
           </span>
         </h1>
@@ -135,32 +135,31 @@ export default function ThreeSteps() {
             display: block;
           }
         }
-            .cta-btn {
-            background: #dc2626;
-            color: white;
-            padding: 16px 48px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: transform 0.3s;
-            box-shadow: 0 0 8px #dc2626;
-            animation: glowPulse 1s infinite alternate;
-            }
+        .cta-btn {
+          background: #dc2626;
+          color: white;
+          padding: 16px 48px;
+          border-radius: 8px;
+          font-weight: 600;
+          transition: transform 0.3s;
+          box-shadow: 0 0 8px #dc2626;
+          animation: glowPulse 1s infinite alternate;
+        }
 
-            .cta-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px #dc2626, 0 0 30px #dc2626;
-            animation: none;
-            }
+        .cta-btn:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 15px #dc2626, 0 0 30px #dc2626;
+          animation: none;
+        }
 
-            @keyframes glowPulse {
-            0% {
-                box-shadow: 0 0 5px #dc2626;
-            }
-            100% {
-                box-shadow: 0 0 20px #dc2626;
-            }
-            }
-
+        @keyframes glowPulse {
+          0% {
+            box-shadow: 0 0 5px #dc2626;
+          }
+          100% {
+            box-shadow: 0 0 20px #dc2626;
+          }
+        }
       `}</style>
     </section>
   );
