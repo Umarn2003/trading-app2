@@ -42,14 +42,14 @@ export default function CustomerService() {
             <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center">
               <Phone size={22} />
             </div>
-            <span className="text-base md:text-lg">+44 (113) 3204819</span>
+            <span className="text-xl font-sans">+44 (113) 3204819</span>
           </div>
 
           <div className="flex items-center gap-4 text-white cursor-pointer">
             <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center">
               <MessageCircle size={22} />
             </div>
-            <span className="text-base md:text-lg">Live Chat</span>
+            <span className="text-xl font-sans">Live Chat</span>
           </div>
         </div>
 
