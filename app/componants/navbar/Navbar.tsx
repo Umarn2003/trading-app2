@@ -178,7 +178,7 @@ export const Navbar: React.FC = () => {
                       ease-in-out
                       ${
                         openIndex === index
-                          ? "max-h-[500px] opacity-100"
+                          ? "max-h-125 opacity-100"
                           : "max-h-0 opacity-0"
                       }
                       bg-neutral-900 px-6
@@ -217,9 +217,13 @@ export const Navbar: React.FC = () => {
       <div
         className={`${
           strecth ? "md:w-full" : "md:w-7/12"
-        } bg-[#141a30] bg-opacity-90 flex flex-col w-full transition-all duration-500 backdrop-blur-lg rounded-sm border-[#dbdce922] border`}
+        } bg-[#141a30] bg-opacity-90 flex flex-col w-full transition-all duration-500 backdrop-blur-lg rounded-sm border-[#dbdce922] border items-center`}
       >
-        <div className="md:flex hidden justify-center relative py-3">
+        <div
+          className={`md:flex hidden justify-center relative py-3 ${
+            strecth ? "w-7/12" : "w-full"
+          }`}
+        >
           <ul className="flex justify-between items-center w-9/12">
             {["Trading", "Client", "Trade Web", "About us", "Partnership"].map(
               (value, idx) => (
@@ -290,7 +294,7 @@ export const Navbar: React.FC = () => {
         >
           {selectedNav === "Trading" && (
             <div
-              className={`backdrop-blur-lg bg-[#141a30]/50 p-6 shadow flex justify-center font-pt border-[#dbdce922] border ${
+              className={`backdrop-blur-md bg-[#141a30]/80 p-6 shadow flex justify-center font-pt border-[#dbdce922] border ${
                 strecth ? "w-full" : "w-full"
               }`}
             >
@@ -400,7 +404,7 @@ export const Navbar: React.FC = () => {
           )}
           {selectedNav === "Client" && (
             <div
-              className={`backdrop-blur-lg bg-[#141a30]/50 p-6 shadow flex justify-center font-pt border-[#dbdce922] border ${
+              className={`backdrop-blur-lg bg-[#141a30]/80 p-6 shadow flex justify-center font-pt border-[#dbdce922] border ${
                 strecth ? "w-full" : "w-full"
               }`}
             >
@@ -503,7 +507,7 @@ export const Navbar: React.FC = () => {
           {/* about us */}
           {selectedNav === "About us" && (
             <div
-              className={`backdrop-blur-lg bg-[#141a30]/50 p-6 shadow flex justify-center font-pt border-[#dbdce922] border ${
+              className={`backdrop-blur-lg bg-[#141a30]/80 p-6 shadow flex justify-center font-pt border-[#dbdce922] border ${
                 strecth ? "w-full" : "w-full"
               }`}
             >
@@ -562,7 +566,7 @@ export const Navbar: React.FC = () => {
           )}
           {selectedNav === "Partnership" && (
             <div
-              className={`backdrop-blur-lg bg-[#141a30]/50 p-6 shadow flex justify-center font-pt border-[#dbdce922] border ${
+              className={`backdrop-blur-lg bg-[#141a30]/80 p-6 shadow flex justify-center font-pt border-[#dbdce922] border ${
                 strecth ? "w-full" : "w-full"
               }`}
             >
