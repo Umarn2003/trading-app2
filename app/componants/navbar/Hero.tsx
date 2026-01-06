@@ -5,27 +5,27 @@ import Image from "next/image";
 
 const slides = [
   {
-    title: "Access up to",
+    title: "Accédez jusqu'à",
     highlight: "1000:1",
-    subtitle: "Leverage on Gold",
+    subtitle: "Effet de levier sur l'or",
     image: "/1.png",
   },
   {
-    title: "Trade",
+    title: "Négociez",
     highlight: "Forex",
-    subtitle: "With Tight Spreads",
+    subtitle: "Avec des spreads serrés",
     image: "/2.png",
   },
   {
-    title: "Invest in",
+    title: "Investissez dans",
     highlight: "Crypto",
-    subtitle: "24/7 Global Market",
+    subtitle: "Marché mondial 24/7",
     image: "/3.png",
   },
   {
-    title: "Get your",
-    highlight: "Cash back",
-    subtitle: "with bonus",
+    title: "Obtenez votre",
+    highlight: "Cashback",
+    subtitle: "avec bonus",
     image: "/4.png",
   },
 ];
@@ -66,7 +66,7 @@ export default function Hero() {
             {slides[safeActive].subtitle}
           </h1>
           <button className="bg-blue-600 hover:bg-blue-800 transition text-white px-6 py-3 rounded-md font-semibold shadow-lg">
-            Start Trading
+            Commencer le trading
           </button>
         </div>
 
@@ -74,7 +74,7 @@ export default function Hero() {
           <div key={safeActive} className="animate-slideFromRight">
             <Image
               src={slides[safeActive].image}
-              alt="Hero slide"
+              alt="Diapositive principale"
               width={420}
               height={420}
               className="object-cover drop-shadow-blue-700 drop-shadow-2xl h-[50dvh]"

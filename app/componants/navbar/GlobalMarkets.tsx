@@ -6,63 +6,63 @@ import { motion } from "framer-motion";
 export default function GlobalMarkets() {
   const cards = [
     {
-      title: "Premium Economic Calendar",
+      title: "Calendrier économique",
       description:
-        "Start trading news like the pros with our professional economic calendar.",
+        "Commencez à trader les actualités comme les pros grâce à notre calendrier économique professionnel.",
       outputs: [
-        "Real-time global economic events",
-        "High-impact news filtering",
-        "Advanced market timing insights",
+        "Événements économiques mondiaux en temps réel",
+        "Filtrage des actualités à fort impact",
+        "Analyses avancées de synchronisation du marché",
       ],
     },
     {
-      title: "Technical Views",
+      title: "Analyses techniques",
       description:
-        "Access live trading setups based on pattern recognition and expert analysis.",
+        "Accédez à des configurations de trading en direct basées sur la reconnaissance de motifs et l'analyse d'experts.",
       outputs: [
-        "Professional technical analysis",
-        "Pattern recognition setups",
-        "Actionable trade ideas",
+        "Analyse technique professionnelle",
+        "Configurations basées sur la reconnaissance de motifs",
+        "Idées de trading exploitables",
       ],
     },
     {
       title: "Alpha EA",
       description:
-        "Unlock live trading ideas with three Expert Advisors for MT4 and MT5.",
+        "Déverrouillez des idées de trading en direct avec trois Expert Advisors pour MT4 et MT5.",
       outputs: [
-        "Three powerful automated EAs",
-        "MT4 & MT5 compatibility",
-        "Live algorithmic trade signals",
+        "Trois EAs automatisés puissants",
+        "Compatibilité MT4 & MT5",
+        "Signaux de trading algorithmiques en direct",
       ],
     },
     {
-      title: "AI Market Buzz",
+      title: "Tendances du marché par IA",
       description:
-        "Gain live market-moving insights across thousands of tradable assets.",
+        "Obtenez des insights en direct qui font bouger le marché sur des milliers d'actifs négociables.",
       outputs: [
-        "AI-powered sentiment analysis",
-        "Coverage of 35,000+ assets",
-        "Real-time market buzz alerts",
+        "Analyse de sentiment par IA",
+        "Couverture de plus de 35 000 actifs",
+        "Alertes de tendances du marché en temps réel",
       ],
     },
     {
-      title: "Forex Signals",
+      title: "Signaux Forex",
       description:
-        "Access daily forex trading ideas and technical setups in real-time.",
+        "Accédez à des idées de trading forex quotidiennes et à des configurations techniques en temps réel.",
       outputs: [
-        "Daily trading signals",
-        "Technical entry & exit points",
-        "Real-time signal updates",
+        "Signaux de trading quotidiens",
+        "Points d'entrée et de sortie techniques",
+        "Mises à jour des signaux en temps réel",
       ],
     },
     {
-      title: "Cashback Bonus",
+      title: "Bonus Cashback",
       description:
-        "Get a 50% cashback bonus that converts into real cash as you trade.",
+        "Recevez un bonus de cashback de 50% qui se convertit en argent réel au fur et à mesure de vos trades.",
       outputs: [
-        "50% cashback on trading volume",
-        "Bonus converts to withdrawable cash",
-        "Automatic reward tracking",
+        "50% de cashback sur le volume de trading",
+        "Le bonus se convertit en argent retirable",
+        "Suivi automatique des récompenses",
       ],
     },
   ];

@@ -1,7 +1,13 @@
 "use client";
 import React, { useState } from "react";
 
-const tabs = ["Forex", "Indices", "Commodities", "Share CFDs", "ETFs"];
+const tabs = [
+  { key: "forex", label: "Forex" },
+  { key: "indices", label: "Indices" },
+  { key: "commodities", label: "Matières premières" },
+  { key: "share cfds", label: "CFD sur actions" },
+  { key: "etfs", label: "ETF" },
+];
 const marketData = {
   forex: [
     {
@@ -182,18 +188,18 @@ const marketData = {
 };
 
 export default function TradeTable() {
-  const [activeTab, setActiveTab] = useState("Forex");
+  const [activeTab, setActiveTab] = useState("forex");
   return (
     <div className="bg-transparent py-10">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-2xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white  bg-clip-text">
-          Trade Global Markets{" "}
-          <span className="text-gray-400">at the Lowest Costs!</span>
+          Négociez sur les marchés mondiaux
+          <span className="text-gray-400"> aux coûts les plus bas !</span>
         </h1>
         <p className="mt-6 text-gray-400 text-lg">
-          Gain fast and easy access to 1000+ instruments with{" "}
+          Accédez rapidement et facilement à plus de 1000 instruments avec
           <span className="text-white font-medium">
-            PRIME ECN spreads from 0.0 pips!
+            des spreads PRIME ECN à partir de 0,0 pip !
           </span>
         </p>
       </div>
@@ -203,16 +209,15 @@ export default function TradeTable() {
         <div className="flex justify-around text-gray-400 text-lg">
           {tabs.map((tab) => (
             <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
+              key={tab.key}
+              onClick={() => setActiveTab(tab.key)}
               className={`relative w-3/4 pb-4 transition-colors hover:cursor-pointer ${
-                activeTab === tab ? "text-white" : "hover:text-white"
+                activeTab === tab.key ? "text-white" : "hover:text-white"
               }`}
             >
-              {tab}
+              {tab.label}
 
-              {/* ACTIVE BLUE LINE */}
-              {activeTab === tab && (
+              {activeTab === tab.key && (
                 <span className="absolute left-0 bottom-0 h-0.5 w-full bg-blue-600 transition-all duration-300" />
               )}
             </button>
@@ -230,46 +235,46 @@ export default function TradeTable() {
           <table className="w-full">
             <thead className="text-base text-white/60 font-light border-b border-gray-700">
               <tr className="flex justify-around">
-                <th className="font-normal py-3">Name</th>
+                <th className="font-normal py-3">Nom</th>
                 <th className="font-normal py-3">Bid</th>
                 <th className="font-normal py-3">Spread</th>
                 <th className="font-normal py-3">Ask</th>
-                <th className="font-normal py-3">% Change</th>
+                <th className="font-normal py-3">% Variation</th>
               </tr>
             </thead>
             <tbody className="w-full">
-              {marketData[
-                activeTab.toLowerCase() as keyof typeof marketData
-              ].map((data, idx) => (
-                <tr
-                  key={idx}
-                  className="flex justify-around py-4 text-white border-b border-gray-700 last:border-b-0"
-                >
-                  <td className="flex-1 text-center">{data.name}</td>
-                  <td
-                    className={`flex-1 text-center ${
-                      idx % 2 === 0 ? "text-green-500" : "text-red-500"
-                    }`}
+              {marketData[activeTab as keyof typeof marketData].map(
+                (data, idx) => (
+                  <tr
+                    key={idx}
+                    className="flex justify-around py-4 text-white border-b border-gray-700 last:border-b-0"
                   >
-                    {data.bid}
-                  </td>
-                  <td className="flex-1 text-center">{data.spread}</td>
-                  <td
-                    className={`flex-1 text-center ${
-                      idx % 3 === 0 ? "text-green-500" : "text-red-500"
-                    }`}
-                  >
-                    {data.ask}
-                  </td>
-                  <td
-                    className={`flex-1 text-center ${
-                      idx % 4 === 0 ? "text-green-500" : "text-red-500"
-                    }`}
-                  >
-                    {data.change}
-                  </td>
-                </tr>
-              ))}
+                    <td className="flex-1 text-center">{data.name}</td>
+                    <td
+                      className={`flex-1 text-center ${
+                        idx % 2 === 0 ? "text-green-500" : "text-red-500"
+                      }`}
+                    >
+                      {data.bid}
+                    </td>
+                    <td className="flex-1 text-center">{data.spread}</td>
+                    <td
+                      className={`flex-1 text-center ${
+                        idx % 3 === 0 ? "text-green-500" : "text-red-500"
+                      }`}
+                    >
+                      {data.ask}
+                    </td>
+                    <td
+                      className={`flex-1 text-center ${
+                        idx % 4 === 0 ? "text-green-500" : "text-red-500"
+                      }`}
+                    >
+                      {data.change}
+                    </td>
+                  </tr>
+                )
+              )}
             </tbody>
           </table>
         </div>

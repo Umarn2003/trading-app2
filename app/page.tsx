@@ -17,21 +17,21 @@ export default function Home() {
     <div className="bg-linear-to-b from-[#050b1e] to-[#020617]">
       <Hero />
       <TradeTable />
-      <div>
+      <div id="benefits">
         <BenefitsSection />
       </div>
 
-      <div>
+      <div id="regulations">
         <RegulationAndPartners />
       </div>
 
-      <div>
+      <div id="tools">
         <GlobalMarkets />
       </div>
       <div>
         <TradeandEarn />
       </div>
-      <div>
+      <div id="learn">
         <HowTrade />
       </div>
       <div>
@@ -39,8 +39,12 @@ export default function Home() {
       </div>
       {/* <CustomerService /> */}
       <ThreeSteps />
-      <FAQForTrading />
-      <ContactForm />
+      <div id="faqs">
+        <FAQForTrading />
+      </div>
+      <div id="contact us">
+        <ContactForm />
+      </div>
     </div>
   );
 }

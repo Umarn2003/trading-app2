@@ -32,7 +32,7 @@ export default function RegulationAndPartners() {
 
       <div className="relative max-w-7xl mx-auto px-6 my-auto text-white">
         <h2 className="text-3xl font-medium md:text-5xl text-center pb-28">
-          Financial Regulation
+          Réglementation financière
         </h2>
         <div className="justify-between grid md:grid-cols-2 gap-24">
           <div
@@ -40,11 +40,11 @@ export default function RegulationAndPartners() {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
             }`}
           >
-            <h2 className="text-5xl text-blue-500 mb-8">We’re Regulated</h2>
+            <h2 className="text-5xl text-blue-500 mb-8">Nous sommes régulés</h2>
             <p className="text-white/70 text-lg md:text-xl leading-loose ">
-              Moneta Markets operates in accordance with the financial
-              regulations and compliance standards outlined by the SLIBC (Reg.
-              No. 2023-00068) and FSCA (Reg. No. 47490).
+              WEb Markets opère conformément aux réglementations financières et
+              aux normes de conformité énoncées par la SLIBC (Reg. No.
+              2023-00068) et la FSCA (Reg. No. 47490).
             </p>
           </div>
 
@@ -53,12 +53,13 @@ export default function RegulationAndPartners() {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
             }`}
           >
-            <h2 className="text-5xl mb-8 text-blue-500">You’re Protected</h2>
+            <h2 className="text-5xl mb-8 text-blue-500">Vous êtes protégés</h2>
             <p className="text-white/70 text-lg leading-loose md:text-xl">
-              Client funds are held in a segregated account with an AA-Rated
-              Global Bank and trading accounts have negative balance protection.
-              We are subject to regular audits and have comprehensive indemnity
-              insurance.
+              Les fonds des clients sont conservés dans un compte ségrégué
+              auprès d'une banque mondiale notée AA et les comptes de trading
+              bénéficient d'une protection contre les soldes négatifs. Nous
+              faisons l'objet d'audits réguliers et disposons d'une assurance
+              d'indemnisation complète.
             </p>
           </div>
         </div>

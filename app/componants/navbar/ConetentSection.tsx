@@ -9,20 +9,20 @@ export default function HowTrade() {
       ></div>
       <section className="max-w-7xl mx-auto px-6 py-20">
         <h1 className="text-center text-4xl md:text-6xl font-bold mb-16">
-          Learn How to <span className="text-blue-500">Trade the Market </span>{" "}
-          in Both Directions
+          Apprenez à <span className="text-blue-500">trader le marché</span>
+          dans les deux sens
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center w-11/12 mx-auto">
           <div>
             <h3 className="text-xl text-center font-bold mb-4 text-blue-500">
-              Market price goes higher
+              Le prix du marché augmente
             </h3>
 
             <div className="relative w-full aspect-4/3 rounded-xl border border-[#dbdce922] bg-white/5 overflow-hidden">
               <Image
                 src="/tradingup.jpg"
-                alt="Market goes up"
+                alt="Le marché monte"
                 fill
                 className="object-cover"
               />
@@ -31,29 +31,31 @@ export default function HowTrade() {
 
           <div className="text-center space-y-6">
             <p className="text-gray-400 text-xl leading-relaxed">
-              All Moneta Markets clients are able to profit from the bullish and
-              bearish moves of 1000+ tradable instruments, such as Forex, Share
-              CFDs, Indices, Commodities and more.
+              Tous les clients de Moneta Markets peuvent tirer profit des
+              mouvements haussiers et baissiers de plus de 1000 instruments
+              négociables, tels que le Forex, les CFD sur actions, les indices,
+              les matières premières, et bien plus.
             </p>
 
             <p className="font-bold text-xl">
-              Profit from both up and down market cycles with Moneta Markets!
+              Profitez des cycles de marché haussiers et baissiers avec Moneta
+              Markets !
             </p>
 
             <button className="mt-14 px-8 py-4 hover:cursor-pointer rounded-lg bg-blue-600 hover:bg-blue-800 transition font-bold">
-              Learn how to trade
+              Apprenez à trader
             </button>
           </div>
 
           <div>
             <h3 className="text-xl text-center font-bold mb-4 text-blue-500">
-              Market price goes lower
+              Le prix du marché baisse
             </h3>
 
             <div className="relative w-full aspect-[4/3] rounded-xl border border-[#dbdce922] bg-white/5 overflow-hidden">
               <Image
                 src="/tradingdown.jpg"
-                alt="Market goes down"
+                alt="Le marché baisse"
                 fill
                 className="object-cover"
               />

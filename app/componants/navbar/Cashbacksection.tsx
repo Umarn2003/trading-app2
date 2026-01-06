@@ -9,7 +9,7 @@ export default function TradeandEarn() {
       ></div>
       <div className="mx-auto max-w-7xl px-6 mt-26 mb-20">
         <h2 className="text-center text-4xl md:text-5xl font-bold text-white mb-20">
-          Deposit. Trade. Earn.
+          Déposez. Négociez. Gagnez.
         </h2>
 
         <div className="grid items-center gap-16 lg:grid-cols-2">
@@ -51,12 +51,12 @@ export default function TradeandEarn() {
 
           <div className="max-w-lg">
             <p className="text-3xl  text-gray-400">
-              Now, whenever you fund your live account with{" "}
-              <span className="text-white font-semibold">$100</span> or more,
-              we’ll give you a{" "}
-              <span className="text-white font-semibold">50% bonus</span>. Then,
-              when you start trading FX, Gold, or Oil, your bonus will convert
-              to real cash!
+              Désormais, chaque fois que vous alimentez votre compte réel avec
+              <span className="text-white font-semibold"> 100 $</span> ou plus,
+              nous vous offrons un
+              <span className="text-white font-semibold"> bonus de 50 %</span>.
+              Ensuite, lorsque vous commencerez à négocier le Forex, l'or ou le
+              pétrole, votre bonus se convertira en argent réel !
             </p>
 
             <button
@@ -72,7 +72,7 @@ export default function TradeandEarn() {
                 hover:shadow-[0_0_25px_rgba(37,99,235,0.8)]
               "
             >
-              Learn more
+              En savoir plus
             </button>
           </div>
         </div>
