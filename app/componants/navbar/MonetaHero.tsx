@@ -109,7 +109,7 @@ export default function BenefitsSection() {
                     key={i}
                     className="flex items-center gap-3 group cursor-pointer"
                   >
-                    <div className="w-2 h-2 rounded-full bg-linear-to-r from-blue-500 to-purple-500 group-hover:scale-150 transition-transform" />
+                    <div className="w-2 h-2 rounded-full bg-linear-to-r from-blue-500 group-hover:scale-150 transition-transform" />
                     <p className="text-white/80 group-hover:text-white transition-colors text-lg">
                       {item}
                     </p>
@@ -145,7 +145,7 @@ export default function BenefitsSection() {
                       className={`relative w-16 h-16 rounded-2xl mb-6 flex items-center justify-center  shadow-sm group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}
                     >
                       <Icon className="w-8 h-8 text-white relative z-10" />
-                      <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl group-hover:bg-white/30 transition-colors" />
+                      <div className="absolute inset-0 rounded-2xl blur-xl group-hover:bg-white/10 transition-colors" />
                     </div>
 
                     <h3
@@ -169,7 +169,20 @@ export default function BenefitsSection() {
         </div>
 
         <div className="mt-20 text-center">
-          <button className="group relative px-8 py-4 rounded-full text-white bg-blue-500 hover:bg-blue-800 cursor-pointer font-semibold text-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+          <button
+            className="group relative 
+                mt-10
+                inline-flex items-center justify-center
+                rounded-lg
+                bg-blue-600
+                px-6 py-3
+                text-lg font-semibold text-white
+                transition
+                hover:bg-blue-500
+                hover:shadow-[0_0_25px_rgba(37,99,235,0.8)]
+                hover:cursor-pointer
+                "
+          >
             <span className="relative z-10">Commencer Maintenant</span>
             <div className="absolute inset-0 rounded-full duration-300" />
           </button>

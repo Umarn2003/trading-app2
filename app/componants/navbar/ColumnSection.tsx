@@ -46,7 +46,6 @@ const features = [
 export default function ImproveTradings() {
   return (
     <main className="bg-[#050b1e] overflow-hidden">
-
       {/* ================= HERO SECTION ================= */}
       <section className="relative bg-gradient-to-b from-[#050b1e] to-[#070f2b] pt-24 pb-28">
         <div className="relative z-10 mx-auto max-w-5xl text-center px-4">
@@ -91,10 +90,9 @@ export default function ImproveTradings() {
       <section className="bg-gradient-to-b from-[#070f2b] to-[#050b1e] py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-x-16 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
-
             {features.map((f, i) => (
               <div
-                key={f.title}
+                key={i}
                 className="group animate-fade-up"
                 style={{ animationDelay: `${i * 100}ms` }}
               >
@@ -123,11 +121,12 @@ export default function ImproveTradings() {
                   className="mt-4 inline-flex items-center gap-1 text-blue-500 transition hover:text-blue-400"
                 >
                   Find out more
-                  <span className="transition group-hover:translate-x-1">›</span>
+                  <span className="transition group-hover:translate-x-1">
+                    {"›"}
+                  </span>
                 </a>
               </div>
             ))}
-
           </div>
         </div>
       </section>
@@ -150,7 +149,6 @@ export default function ImproveTradings() {
           opacity: 0;
         }
       `}</style>
-
     </main>
   );
 }

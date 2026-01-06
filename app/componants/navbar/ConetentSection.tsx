@@ -15,7 +15,7 @@ export default function HowTrade() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center w-11/12 mx-auto">
           <div>
-            <h3 className="text-xl text-center font-bold mb-4">
+            <h3 className="text-xl text-center font-bold mb-4 text-blue-500">
               Market price goes higher
             </h3>
 
@@ -46,7 +46,7 @@ export default function HowTrade() {
           </div>
 
           <div>
-            <h3 className="text-xl text-center font-bold mb-4">
+            <h3 className="text-xl text-center font-bold mb-4 text-blue-500">
               Market price goes lower
             </h3>
 

@@ -26,7 +26,7 @@ export default function ContactForm() {
   return (
     <section className="relative min-h-screen flex flex-col md:flex-row">
       <div
-        className="absolute -right-40 bottom-10 md:w-[400px] w-[300px] h-[300px] 
+        className="absolute right-0 bottom-10 md:w-[400px] w-[300px] h-[300px] 
               bg-blue-700/70 blur-[120px] rounded-full"
       ></div>
       {/* LEFT PANEL
